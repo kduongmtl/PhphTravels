@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20181205 17:48:22.223">
+<suite id="s1" name="Test Login Page" source="C:\Automation\PhphTravels\testcases\Test_Login_Page.robot">
+<kw name="Open Login Page" library="resource" type="setup">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20181205 17:48:22.654" level="INFO">Opening browser 'Chrome' to base url 'http://www.phptravels.net/login'.</msg>
+<status status="PASS" starttime="20181205 17:48:22.653" endtime="20181205 17:48:27.704"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" starttime="20181205 17:48:27.704" endtime="20181205 17:48:27.705"></status>
+</kw>
+<status status="PASS" starttime="20181205 17:48:22.653" endtime="20181205 17:48:27.705"></status>
+</kw>
+<test id="s1-t1" name="Case1">
+<kw name="Enter Email And Password">
+<arguments>
+<arg>user@phptravels.com</arg>
+<arg>demouser</arg>
+</arguments>
+<kw name="Enter Email" library="resource">
+<arguments>
+<arg>${email}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>username</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20181205 17:48:27.708" level="INFO">Typing text 'user@phptravels.com' into text field 'username'.</msg>
+<status status="PASS" starttime="20181205 17:48:27.707" endtime="20181205 17:48:28.017"></status>
+</kw>
+<status status="PASS" starttime="20181205 17:48:27.707" endtime="20181205 17:48:28.018"></status>
+</kw>
+<kw name="Enter Password" library="resource">
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20181205 17:48:28.020" level="INFO">Typing text 'demouser' into text field 'password'.</msg>
+<status status="PASS" starttime="20181205 17:48:28.019" endtime="20181205 17:48:28.215"></status>
+</kw>
+<status status="PASS" starttime="20181205 17:48:28.018" endtime="20181205 17:48:28.215"></status>
+</kw>
+<status status="PASS" starttime="20181205 17:48:27.706" endtime="20181205 17:48:28.215"></status>
+</kw>
+<status status="PASS" starttime="20181205 17:48:27.705" endtime="20181205 17:48:28.215" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20181205 17:48:22.235" endtime="20181205 17:48:28.217"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test Login Page">Test Login Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
